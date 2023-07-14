@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.box {
+  width: 700px;
+  height: 500px;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#item {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 0px 2px gray;
+  background: linear-gradient(to left, #ffffff, #ece9e6);
+  display: block;
+}
+
+#to-do-box {
+  margin-top: 25px;
+  list-style: none;
+}
+
+#to-do-box li {
+  font-weight: bold;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 8px;
+  position: relative;
+  padding-right: 35px;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+#to-do-box i {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #9fd4e0 !important;
+}
